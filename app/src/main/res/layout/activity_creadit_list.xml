@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreaditList">
+
+    <ListView
+        android:id="@+id/cred_list"
+        android:layout_width="358dp"
+        android:layout_height="501dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head">
+
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="User Credit Details"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cred_list">
+
+        <Button
+            android:id="@+id/transfer"
+            android:layout_width="193dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Transfer Credits"
+            tools:layout_editor_absoluteX="216dp"
+            tools:layout_editor_absoluteY="659dp" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="193dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Insert Record"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="659dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
